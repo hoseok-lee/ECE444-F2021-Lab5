@@ -23,13 +23,15 @@
   <form method="post" class="common-page-form">
     <dl>
       {{ render_field(form.select) }}
+      <br>
       <p>
-          Restrict by one of: {{ render_field(form.divisions) }} or {{ render_field(form.departments) }} or {{ render_field(form.campuses) }}
-      </p> 
+          Restrict by one of: <br> <br> {{ render_field(form.divisions) }} or <br> {{ render_field(form.departments) }} or <br> {{ render_field(form.campuses) }}
+      </p>
+      <br>
       <p>
       {{ render_field(form.search) }}
     </p></dl>
-    <p>{{render_field(form.top)}} <button type="submit" value="Search" class="btn btn-primary common-page-submit-btn"> </button>
+    <p>{{render_field(form.top)}} <button type="submit" class="btn btn-primary common-page-submit-btn">Search</button>
   </p></form>
 </body>
 </doctype>
